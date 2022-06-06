@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Row, Col, Button, Navbar } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -18,6 +20,18 @@ function App() {
           Learn React
         </a>
       </header>
+      <Row className="w-50">
+        <Navbar></Navbar>
+        <Button as={Col} variant="primary">
+          hello #1
+        </Button>
+        <Button as={Col} variant="primary">
+          hello #2
+        </Button>
+        <Button as={Col} variant="primary">
+          hello #3
+        </Button>
+      </Row>
     </div>
   );
 }
